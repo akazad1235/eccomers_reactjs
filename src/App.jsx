@@ -45,6 +45,36 @@ function App() {
       <section>
         <Reliable/>
       </section>
+      {/* Two Product Card */}
+      <section>
+          <div className="flex w-5/6 gap-6 mx-auto my-10">
+            <div className='flex-1 overflow-hidden group'>
+              <div className="flex items-center gap-6 p-4 transition-transform duration-700 rounded-md bg-cyan-50 group-hover:scale-105">
+                <div className='flex-1 text-center'>
+                      <h1 className='text-3xl font-black'>Bowl & Spoon</h1>
+                      <p>Wooden Product</p>
+                      <button className='p-2 py-1 mt-5 rounded-lg bg-secondary hover:text-white'>Explore All</button>
+                </div>
+                <div className='flex-1'>
+                  <img src="../public/wood&spoonse.png" alt="" />
+                </div>
+              </div>
+            </div>
+            
+            <div className='flex-1 overflow-hidden group'>
+              <div className="flex items-center gap-6 p-4 transition-transform duration-700 rounded-md bg-cyan-50 group-hover:scale-105 hover:shadow-lg">
+                  <div className='flex-1 text-center'>
+                    <h1 className='text-3xl font-black'>Colorful Kettle</h1>
+                    <p>Seramic Product</p>
+                    <button className='p-2 py-1 mt-5 rounded-lg bg-secondary hover:text-white'>Explore All</button>
+                  </div>
+                  <div className='flex-1'>
+                    <img src="../public/kettle.png" alt="" />
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
 
 
     </>
