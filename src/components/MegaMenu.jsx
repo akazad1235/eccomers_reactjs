@@ -80,7 +80,7 @@ const MegaMenu = () => {
                     href="#"
                     className="flex items-center space-x-2 text-gray-800 hover:text-gray-500"
                   >
-                    {item.name}{item.subMenu.length > 0 &&(<FontAwesomeIcon icon={ faAngleDown } size='1x'/>)}
+                    {item.name}{item.subMenu.length > 0 &&(<FontAwesomeIcon className="text-secondary" icon={ faAngleDown } size='1x'/>)}
 
                   </a>
                  

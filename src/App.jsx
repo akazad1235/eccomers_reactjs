@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import MegaMenu from './components/MegaMenu';
+import Banner from './components/Banner';
+import Reliable from './components/Reliable';
 
 function App() {
 
@@ -35,6 +37,16 @@ function App() {
       <nav>
          <MegaMenu/>
       </nav>
+      {/* Banner */}
+      <section>
+        <Banner/>
+      </section>
+      {/* reliable */}
+      <section>
+        <Reliable/>
+      </section>
+
+
     </>
   )
 }
