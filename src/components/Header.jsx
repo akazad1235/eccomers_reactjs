@@ -1,12 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faUser, faCartShopping, faEye, faHeart, faCodeCompare, faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faUser, faCartShopping, faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <>
                  <div className='flex justify-center bg-gray-100'>
         <div className="flex items-center w-5/6 gap-4">
           <div className='flex-none w-40'>
-            <img className="w-full" src="../public/logo.png" alt="" />
+            <Link to="/">
+                <img className="w-full" src="../public/logo.png" alt="" />
+            </Link>
           </div>
           <div className='flex items-center flex-none w-40 gap-2'>
             <p className='text-secondary'><FontAwesomeIcon icon={ faPhone } size='2x'/></p>

@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import MegaMenu from "../../components/MegaMenu";
+import Pagination from "../../components/Pagination";
 import ProductsCard from "../../components/ProductsCard";
 import FilterSidebar from "./FilterSidebar";
 
@@ -18,9 +19,12 @@ const ProductFilter = () => {
                 <div className="flex-none w-80 sidebar">
                     <FilterSidebar/>
                 </div>
-                <div className="flex flex-col items-center justify-center flex-1 products">
-                    <div className="grid grid-cols-3 gap-4">
-                        <ProductsCard/>                        
+                <div className="flex flex-col items-center justify-center flex-1 products ">
+                    <div className="grid grid-cols-3 gap-8">
+                        <ProductsCard/>                 
+                    </div>
+                    <div className="my-10 pagination">
+                        <Pagination/>
                     </div>
                 </div>
             </div>

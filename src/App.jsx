@@ -6,6 +6,7 @@ import Reliable from './components/Reliable';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import ProductsCard from './components/ProductsCard';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -116,7 +117,9 @@ function App() {
           <ProductsCard/>
         </div>
         <div className='flex flex-col items-center justify-center'>
-           <button className='p-3 text-2xl font-normal text-white rounded-md bg-secondary'>View All</button>
+           <Link to="/product/filter">
+            <button className='p-3 text-2xl font-normal text-white rounded-md bg-secondary'>View All</button>
+           </Link>
         </div>
       </div>
       </section>
