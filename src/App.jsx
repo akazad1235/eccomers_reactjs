@@ -3,6 +3,7 @@ import { faPhone, faUser, faCartShopping, faEye, faHeart, faCodeCompare  } from 
 import MegaMenu from './components/MegaMenu';
 import Banner from './components/Banner';
 import Reliable from './components/Reliable';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -379,11 +380,26 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='flex flex-col items-center justify-center'>
+           <button className='p-3 text-2xl font-normal text-white rounded-md bg-secondary'>View All</button>
+        </div>
       </div>
-
       </section>
-
-
+      {/* news letter */}
+      <section>
+        <div className="w-2/3 p-10 mx-auto bg-gray-200 rounded-md w- w-5/4 news-latter">
+            <h2 className='text-3xl font-bold text-center'>Newsletter</h2>
+            <p className='text-center'>Learn about our most recent news, updates, and deals by subscribing.</p>
+            <div className='flex items-center justify-center my-9'>
+              <input type="text" className='w-2/4 p-3 focus:outline-none' placeholder='Input Your Email'/>
+              <button className='p-3 text-white bg-secondary'>Subscribe</button>
+            </div>
+        </div>
+      </section>
+      {/* footer */}
+      <footer>
+        <Footer/>
+      </footer>
     </>
   )
 }
