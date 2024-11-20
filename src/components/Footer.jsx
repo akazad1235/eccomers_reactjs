@@ -61,8 +61,10 @@ const Footer = () => {
                 </div>
                 
             </div>
+            </div> 
+            <div className='w-full border-t border-t-gray-700 bg-primary'>
+                <p className='p-5 text-center text-white'>All Rights Reserved @ Company 2024</p>
             </div>
-            
         </div>
     );
 };
