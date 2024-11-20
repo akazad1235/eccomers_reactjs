@@ -39,7 +39,7 @@ function App() {
          <MegaMenu/>
       </nav>
       {/* Banner */}
-      <section>
+      <section className='w-5/6 mx-auto'>
         <Banner/>
       </section>
       {/* reliable */}
