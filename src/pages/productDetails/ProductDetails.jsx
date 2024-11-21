@@ -11,6 +11,14 @@ import ProductFaq from './ProductFaq';
 
 const ProductDetails = () => {
     const [productCount, setProductCount] = useState(1)
+    const handleIncrementCount = () => {
+        setProductCount(productCount+1);
+    }
+    const handleDecreamentCount = () => {
+        setProductCount(productCount-1);
+    }
+    console.log(productCount);
+    
     return (
         <>
             <Header/>
@@ -35,9 +43,9 @@ const ProductDetails = () => {
                             <div className="flex items-center gap-3 my-10 action-button">
                                 <div className="flex-none w-30">
                                     <div className="flex product-count">
-                                        <button className='px-1'><FontAwesomeIcon icon={faMinus}/></button>
-                                        <input type="text" value={1} className='w-10 p-2 text-center border border-red-100'/>
-                                        <button className='px-1'><FontAwesomeIcon icon={faPlus}/></button>
+                                        <button onClick={handleDecreamentCount} className='px-1'><FontAwesomeIcon icon={faMinus}/></button>
+                                        <input type="text" value={productCount} className='w-10 p-2 text-center border border-red-100'/>
+                                        <button onClick={handleIncrementCount} className='px-1'><FontAwesomeIcon icon={faPlus}/></button>
                                     </div>
                                 </div>
                                 <div className="flex-none w-30 add-to-cart">
