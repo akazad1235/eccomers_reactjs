@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCartShopping, faEye, faHeart, faCodeCompare } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const ProductsCard = () => {
     return (
@@ -32,9 +33,11 @@ const ProductsCard = () => {
               className="absolute inset-x-0 flex justify-center gap-2 transition-all duration-300 -translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 icon"
               style={{ top: 'calc(65% - 10px)' }}
             >
-              <button className="p-2 bg-white rounded-full hover:bg-secondary">
-                <FontAwesomeIcon icon={faEye} size="2x" className="hover:text-white" />
-              </button>
+              <Link to='/product/details'>
+                <button className="p-2 bg-white rounded-full hover:bg-secondary">
+                  <FontAwesomeIcon icon={faEye} size="2x" className="hover:text-white" />
+                </button>
+              </Link>
               <button className="p-2 bg-white rounded-full hover:bg-secondary">
                 <FontAwesomeIcon
                   icon={faCartShopping}

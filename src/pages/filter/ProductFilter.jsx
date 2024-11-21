@@ -16,6 +16,7 @@ const ProductFilter = () => {
             <MegaMenu/>
         </nav>    
         <main className="w-4/6 mx-auto">
+            {/* Main Header */}
             <div className="my-10 new-arrivals">
                 <div className="flex ">
                     <div className="flex-1 info">
@@ -35,6 +36,7 @@ const ProductFilter = () => {
                     <FilterSidebar/>
                 </div>
                 <div className="flex flex-col items-center justify-center flex-1 products">
+                    {/* Heading */}
                     <div className="flex items-center w-full py-3 header">
                         <div className="flex-1 select">
                             <select name="" id="" className="p-3 ">
@@ -48,6 +50,7 @@ const ProductFilter = () => {
                             <p className="text-end">Showing 1 - 15 of 27 result</p>
                         </div>
                     </div>
+                    {/* Filtered Proudct List */}
                     <div className="grid grid-cols-3 gap-2">
                         <ProductsCard/>                 
                         <ProductsCard/>                 
