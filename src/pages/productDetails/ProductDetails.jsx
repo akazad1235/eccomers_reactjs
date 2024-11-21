@@ -5,9 +5,12 @@ import Footer from '../../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPlus, faMinus, faMoneyCheck, faTruckFast  } from '@fortawesome/free-solid-svg-icons';
 import Reliable from '../../components/Reliable';
+import TabsDetails from './TabsDetails';
+import ProductSlider from '../../components/ProductSlider';
+import ProductFaq from './ProductFaq';
 
 const ProductDetails = () => {
-    const [productCount, setProductCount] = useState(0)
+    const [productCount, setProductCount] = useState(1)
     return (
         <>
             <Header/>
@@ -15,7 +18,7 @@ const ProductDetails = () => {
             <div className='w-5/6 mx-auto my-10'>
                 <div className="flex gap-10">
                     <div className="flex-1 w-full product-image">
-                        <img src="https://new-99.myshopify.com/cdn/shop/products/30_27d6af23-a8d0-42ae-8019-452086d0749a_1024x1024.png?v=1680176669" alt="" />
+                        <img  className='w-full' src="https://new-99.myshopify.com/cdn/shop/products/30_27d6af23-a8d0-42ae-8019-452086d0749a_1024x1024.png?v=1680176669" alt="" />
 
                     </div>
                     <div className="flex-1 w-full product-info">
@@ -74,7 +77,28 @@ const ProductDetails = () => {
             <div className="w-5/6 mx-auto reliable">
                 <Reliable/>
             </div>
-            <Footer/>   
+            <div className="w-5/6 mx-auto my-10 tabs">
+                <TabsDetails/>
+            </div>
+            <div className="w-5/6 mx-auto my-10 relative-products">
+                <div className="info">
+                    <h2 className='my-3 text-4xl font-bold text-center'>Related Products</h2>
+                    <p className='text-center'>You may also like</p>
+                </div>
+                <div className="my-10 product-slider">
+                    <ProductSlider/>
+                </div>
+            </div>
+            <div className="w-3/6 mx-auto my-20 faq">
+                <div className="info">
+                    <h2 className='my-3 text-4xl font-bold text-center'>FAQs</h2>
+                </div>
+                <ProductFaq/>
+            </div>
+            <div className="footer">
+               <Footer/>  
+            </div>
+              
         </>
     );
 };
